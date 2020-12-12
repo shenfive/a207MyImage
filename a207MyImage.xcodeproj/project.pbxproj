@@ -15,6 +15,7 @@
 		3B80CCB425845AA40006294A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B80CCB225845AA40006294A /* LaunchScreen.storyboard */; };
 		3B80CCBD25845AF90006294A /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCBC25845AF90006294A /* MyView.swift */; };
 		3B80CCC025845B3D0006294A /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B80CCBF25845B3D0006294A /* MyView.xib */; };
+		3B80CCC625846A140006294A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCC425846A140006294A /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		3B80CCB525845AA40006294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B80CCBC25845AF90006294A /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		3B80CCBF25845B3D0006294A /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		3B80CCC325846A130006294A /* a207MyImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a207MyImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B80CCC425846A140006294A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3B80CCC525846A140006294A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,9 @@
 				3B80CCB525845AA40006294A /* Info.plist */,
 				3B80CCBC25845AF90006294A /* MyView.swift */,
 				3B80CCBF25845B3D0006294A /* MyView.xib */,
+				3B80CCC525846A140006294A /* Reachability.h */,
+				3B80CCC425846A140006294A /* Reachability.m */,
+				3B80CCC325846A130006294A /* a207MyImage-Bridging-Header.h */,
 			);
 			path = a207MyImage;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 				TargetAttributes = {
 					3B80CCA325845AA30006294A = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -148,6 +156,7 @@
 				3B80CCAC25845AA30006294A /* ViewController.swift in Sources */,
 				3B80CCA825845AA30006294A /* AppDelegate.swift in Sources */,
 				3B80CCAA25845AA30006294A /* SceneDelegate.swift in Sources */,
+				3B80CCC625846A140006294A /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = a207MyImage/Info.plist;
@@ -303,6 +313,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.a207MyImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a207MyImage/a207MyImage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = a207MyImage/Info.plist;
@@ -322,6 +335,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.a207MyImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a207MyImage/a207MyImage-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

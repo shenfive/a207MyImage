@@ -18,13 +18,16 @@
                     <rect key="frame" x="18" y="7" width="118" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </slider>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0C-HV-S2F">
-                    <rect key="frame" x="20" y="44" width="49" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0C-HV-S2F">
+                    <rect key="frame" x="104" y="83" width="51" height="31"/>
                 </switch>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGrayColor"/>
+            <constraints>
+                <constraint firstItem="h0C-HV-S2F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WIC-lb-HFb"/>
+                <constraint firstItem="h0C-HV-S2F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tMT-zy-VoE"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-474.63768115942031" y="-108.81696428571428"/>
         </view>
