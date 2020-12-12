@@ -33,6 +33,14 @@ class ViewController: UIViewController {
     @IBAction func urlAction(_ sender: Any) {
         
         if let url = urlInput.text{
+            if url == "back"{
+                webView.goBack()
+                return
+                
+            }
+            
+            
+            
             if let theUrl = URL(string: "https://" + url){
                 let request = URLRequest(url: theUrl)
                 webView.load(request)
