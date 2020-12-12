@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Cif-7W-eMH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="URL"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRX-eo-53l">
                                 <rect key="frame" x="364" y="54" width="30" height="30"/>
@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="height" constant="30" id="zZ0-Kd-atb"/>
                                 </constraints>
                                 <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="urlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EH4-Qb-Yne"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,6 +60,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="urlInput" destination="FhE-rY-nGP" id="uc1-Fj-R9F"/>
                         <outlet property="webView" destination="Zqe-yV-k0g" id="SQ7-HM-RfC"/>
                     </connections>
                 </viewController>

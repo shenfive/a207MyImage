@@ -16,7 +16,6 @@
 		3B80CCBD25845AF90006294A /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCBC25845AF90006294A /* MyView.swift */; };
 		3B80CCC025845B3D0006294A /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B80CCBF25845B3D0006294A /* MyView.xib */; };
 		3B80CCC625846A140006294A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCC425846A140006294A /* Reachability.m */; };
-		3B80CCCA2584707C0006294A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CCC92584707C0006294A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B80CCCA2584707C0006294A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
