@@ -16,15 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcy-fw-Pz4" customClass="MyView" customModule="a207MyImage" customModuleProvider="target">
-                                <rect key="frame" x="154" y="44" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqe-yV-k0g">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FhE-rY-nGP">
+                                <rect key="frame" x="10" y="54" width="344" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Cif-7W-eMH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRX-eo-53l">
+                                <rect key="frame" x="364" y="54" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82649872970000005" blue="0.0054573672660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="53D-6m-nLG"/>
+                                    <constraint firstAttribute="height" constant="30" id="zZ0-Kd-atb"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zqe-yV-k0g" secondAttribute="trailing" id="2St-lA-yCx"/>
+                            <constraint firstItem="Zqe-yV-k0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A7J-0D-xSB"/>
+                            <constraint firstItem="FhE-rY-nGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Lsb-rg-ayn"/>
+                            <constraint firstItem="Zqe-yV-k0g" firstAttribute="top" secondItem="FhE-rY-nGP" secondAttribute="bottom" constant="10" id="Nkw-bo-oLn"/>
+                            <constraint firstItem="aRX-eo-53l" firstAttribute="leading" secondItem="FhE-rY-nGP" secondAttribute="trailing" constant="10" id="RHy-kL-5RG"/>
+                            <constraint firstItem="FhE-rY-nGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="SjE-gC-7ea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRX-eo-53l" secondAttribute="trailing" constant="20" id="oqk-Wl-tb7"/>
+                            <constraint firstItem="aRX-eo-53l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rrq-se-eSx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zqe-yV-k0g" secondAttribute="bottom" id="vbK-eU-vEo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Zqe-yV-k0g" id="SQ7-HM-RfC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

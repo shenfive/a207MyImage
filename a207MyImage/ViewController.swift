@@ -6,17 +6,19 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let newView = MyView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        newView.clipsToBounds = true
-        self.view.addSubview(newView)
+
         print(getNetworkStatus())
-        
-        
+        if let url = URL(string: "https://www.ichih.com/"){
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
     }
     
     func getNetworkStatus()->Bool{
