@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         print(getNetworkStatus())
-        if let url = URL(string: "https://www.ichih.com/"){
+        if let url = URL(string: "https://www.apple.com.tw/"){
             let request = URLRequest(url: url)
             webView.load(request)
         }

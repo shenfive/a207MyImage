@@ -16,6 +16,7 @@
 		3B80CCBD25845AF90006294A /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCBC25845AF90006294A /* MyView.swift */; };
 		3B80CCC025845B3D0006294A /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B80CCBF25845B3D0006294A /* MyView.xib */; };
 		3B80CCC625846A140006294A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B80CCC425846A140006294A /* Reachability.m */; };
+		3B80CCCA2584707C0006294A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80CCC92584707C0006294A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3B80CCC325846A130006294A /* a207MyImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a207MyImage-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B80CCC425846A140006294A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3B80CCC525846A140006294A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3B80CCC92584707C0006294A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B80CCCA2584707C0006294A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 			children = (
 				3B80CCA625845AA30006294A /* a207MyImage */,
 				3B80CCA525845AA30006294A /* Products */,
+				3B80CCC82584707C0006294A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +82,14 @@
 				3B80CCC325846A130006294A /* a207MyImage-Bridging-Header.h */,
 			);
 			path = a207MyImage;
+			sourceTree = "<group>";
+		};
+		3B80CCC82584707C0006294A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B80CCC92584707C0006294A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
